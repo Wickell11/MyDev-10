@@ -1,0 +1,41 @@
+/* Задание 1: hover и focus */
+form button:hover {
+    background-color: lightblue; /* Цвет кнопки при наведении */
+    cursor: pointer; /* Указатель курсора */
+}
+
+form input:focus {
+    border: 2px solid lightgreen; /* Цвет границы при фокусе */
+    outline: none; /* Убираем стандартный контур */
+}
+
+/* Задание 2: first-child и last-child */
+ul li:first-child {
+    font-weight: bold; /* Жирный шрифт для первого элемента */
+    color: blue; /* Цвет текста */
+}
+
+ul li:last-child {
+    font-style: italic; /* Курсив для последнего элемента */
+    color: green; /* Цвет текста */
+}
+
+/* Задание 3: hover и odd */
+.block a:hover {
+    color: red; /* Цвет ссылки при наведении */
+    text-decoration: underline; /* Подчеркивание */
+}
+
+.block p:nth-child(odd) {
+    background-color: lightyellow; /* Фон для нечетных текстов */
+}
+
+/* Задание 4: Комбинация псевдоклассов */
+.content-block .first:hover {
+    background-color: lightcoral; /* Фон первого элемента при наведении */
+}
+
+.content-block .last:focus {
+    background-color: lightgreen; /* Фон последнего элемента в фокусе */
+    border: 2px solid darkgreen; /* Граница в фокусе */
+}
